@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D&D Tools</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="modal fade bd-example-modal-lg" id="InstanceModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	    	<div class="modal-body">
+	    		<form>
+	    			<div class="id-data"></div>
+	    			<div class="form-group">
+		            	<label for="title-text" class="form-control-label">Title:</label>
+		            	<input type="text" class="form-control" id="title-text">
+		          	</div>
+		          	<div class="form-group">
+		            	<label for="description-text" class="form-control-label">Description:</label>
+		            	<textarea class="form-control" id="description-text"></textarea>
+		          	</div>
+	    		</form>
+	    	</div>
+	    	<div class="modal-footer">
+		        <button type="button" class="btn btn-primary" id="submitForm" data-dismiss="modal">Update Instance</button>
+		    </div>
+	      
+	    </div>
+	  </div>
+	</div>
+	<div id="sigma-graph">
+		
+	</div>
+</body>
+<script type="text/javascript" src="../js/build/sigma.min.js"></script>
+<script type="text/javascript" src="../js/build/plugins/sigma.parsers.json.min.js"></script>
+<script type="text/javascript" src="../js/build/plugins/sigma.plugins.dragNodes.min.js"></script>
+<script type="text/javascript" src="../js/graph-generator.js"></script>
+</html>
